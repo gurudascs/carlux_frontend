@@ -1,0 +1,21 @@
+<!--Car section-->
+<section class="py-5">
+    <div class="container px-lg-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top " [src]="car.image" alt="..." /></div>
+            <div class="col-md-6">
+                <div class="small mb-1">ID : {{car._id}}</div>
+                <h1 class="display-5 fw-bolder">{{car.brand}}</h1>
+                <div class="fs-5 mb-5">
+                    <span>&#8377;{{car.price}}</span>
+                </div>
+                <p class="lead" style="text-align: justify;">{{car.description}}</p>
+                <div class="d-flex justify-content-between">
+                    <button (click)="addToOrder(car)" class="btn btn-outline-danger flex-shrink-0" type="button">
+                        Book now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

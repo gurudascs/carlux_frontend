@@ -1,0 +1,9 @@
+h1{
+    font-family: 'Tektur', cursive;
+}
+
+.navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
